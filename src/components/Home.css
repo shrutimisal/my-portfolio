@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(138, 43, 226, 0.5);
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #a855f7;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Home Section */
+.home {
+    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    background: #000;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+/* Left */
+.home-left {
+    flex: 1;
+}
+
+.home-left .intro {
+    color: #bbb;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.home-left h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home-left h1 .highlight {
+    font-size: 5rem;
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-left h2 {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin-right: 1rem;
+    color: #bbb;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #a855f7;
+}
+
+/* Center */
+.home-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 30vw;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Right */
+.home-right {
+    flex: 1;
+    text-align: right;
+}
+
+.home-right p {
+    color: #bbb;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn.primary {
+    background: #a855f7;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: #9333ea;
+}
+
+.btn.secondary {
+    border: 2px solid #a855f7;
+    color: #a855f7;
+}
+
+.btn.secondary:hover {
+    background: #a855f7;
+    color: #fff;
+}
+
+/* foter */
+.footer {
+    background-color: white;
+    color: black;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-date {
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-text {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-icon {
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    vertical-align: middle;
+    margin: 0 6px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .home-left {
+        text-align: left;
+
+    }
+
+    .home-left h1 {
+        font-size: 2rem;
+    }
+
+    .home-left h1 .highlight {
+        font-size: 3rem;
+    }
+
+    .home-left h2 {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 70vw;
+        max-width: 300px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        margin: 1.5rem 0;
+    }
+
+    .home-right {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .home-right p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    /* Mobile Dropdown Menu */
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        background: black;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .mobile-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    .mobile-menu a:hover {
+        color: #a855f7;
+    }
+
+}

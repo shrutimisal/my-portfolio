@@ -1,0 +1,125 @@
+.skills-section {
+    padding: 3rem 1rem;
+    background: #1f2937;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(90deg, #a855f7, #074c9b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.skills-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 6rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    background: #4b5563;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Colors per icon */
+.skill-icon.html {
+    color: #f97316;
+}
+
+.skill-icon.css {
+    color: #2563eb;
+}
+
+.skill-icon.js {
+    color: #eab308;
+}
+
+.skill-icon.react {
+    color: #38bdf8;
+}
+
+.skill-icon.node {
+    color: #16a34a;
+}
+
+.skill-icon.python {
+    color: #0ea5e9;
+}
+
+.skill-icon.ui {
+    color: #a855f7;
+}
+
+.skill-icon.team {
+    color: #3b82f6;
+}
+
+.skill-icon.git {
+    color: #f9fafb;
+}
+
+.skill-icon.db {
+    color: #f9fafb;
+}
+
+.beginner {
+    display: block;
+    font-size: 0.8rem;
+    color: #d1d5db;
+}
+
+.tools {
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title{
+        margin-bottom: 1rem;
+    }
+
+    .skills-heading {
+    padding-left: 0;
+}
+}
